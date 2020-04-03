@@ -1,0 +1,610 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical Tips</title>
+      <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
+
+</head>
+<style >
+  
+body
+{
+    background: rgb(177, 128, 38); /*url('img/amenajare1.jpg') ;*/
+   height: 2000px;
+   
+    background-size:cover ;
+}
+
+.column
+{
+  background-color: rgb(223, 194, 167);
+  margin:0 15px 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 15px;
+  flex-basis: 33%;
+}
+
+.card
+{
+  padding: 15px 25px;
+
+}
+.container
+{
+  /*max-width: 1170;*/
+  width: 100%;
+  margin:0 auto;
+  display:flex;
+}
+.divinfo 
+{
+  padding-right: 7%; 
+  padding-left: 5%;
+  font-family: Times New Roman;
+  color: rgb(82, 57, 24);
+  font-size: 60px;
+}
+.divinfo p
+{
+  font-size: 23px;
+  color: black;
+}
+
+
+
+  .menu{
+
+  margin:0px;
+  padding:0px;
+  font-weight:bold
+
+
+
+}
+.menu ul{
+  background:#333;
+  height:35px;
+  list-style:none;
+  margin:0;
+  padding:0;
+   
+
+}
+
+.menu li
+{
+  float:left;
+  padding:0px;
+
+}
+
+.menu li a
+ {
+  background:#333; 
+
+  bottom right no-repeat;
+  color:#ccc;
+  display:block;
+  font-weight:normal;
+  line-height:60px;
+  margin:0px;
+  padding:0px 105.79px;
+  text-align:center;
+  text-decoration:none;
+  font-family: Arial;
+}
+
+.menu li a:hover, .menu ul li:hover a
+{
+  background:#556B2F bottom center no-repeat;
+  color:#FFF;
+  text-decoration:none;
+
+
+  font-family: Arial;
+
+}
+.menu li ul
+{
+  background:#333;
+  display:none;
+  height:auto;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  position:absolute;
+  width:210px;
+  z-index:200;
+  font-family: Arial;
+
+}
+
+
+.menu li:hover ul
+{
+  display:block;
+  width:314px;
+
+
+}
+.menu li li
+{
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+width:314;
+
+}
+
+.menu li:hover li a
+{
+  background:none;
+
+}
+
+.menu li ul a
+{
+  display:block;
+  height:60px;
+  font-size:17px;
+  font-family: Arial;
+  margin:0px;
+  padding:0px 10px 0px 100px;
+  text-align:left;
+
+
+}
+
+.menu li ul a:hover, .menu li ul li:hover a
+{
+  background:#556B2F center left no-repeat;
+  border:0px;
+  color:#fff;
+  text-decoration:none;
+  position: relative;
+  border:1px solid white;
+    transition: 0.5s;
+}
+
+.menu p
+{
+  clear:left;
+}
+
+
+</style>
+<body>
+
+  <div class="menu">
+    <ul>
+    <li><a href="../index.php"> <i class="ion-ios-home"></i>  Home</a></li>
+    <li><a href="DetermineSoil.php"><i class="ion-ios-paperplane"></i> Determine Soil </a></li>
+    <li><a href="UseGrountSoils.php"><i class="ion-ios-paperplane"></i>  Use Case</a></li>
+    <li><a href="TypesGrountSoils.php"><i class="ion-ios-paperplane"></i> Type Soil</a></li>
+<?php
+if(!isset($_SESSION['user_id'])):
+?>
+        <li><a href="../../login.html"><i class="ion-checkmark-circled"></i> Try Yourself</a></li>
+<?php
+else: 
+?>  
+    <li>
+    <a href="#"><i class="ion-checkmark-circled"></i> Try Yourself</a>
+      <ul>
+          <li> <a href="stylesGardenn/chinese.html">Easy</a></li>
+          <li> <a href="stylesGardenn/english.html">Medium</a></li>
+          <li> <a href="stylesGardenn/italian.html">Hard</a></li>
+      </ul>
+  </li>
+        </ul>
+<?php endif; ?>
+    </ul>
+  </div>
+<br>
+
+
+<div style="padding-right: 5%;padding-left: 5%">
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+                <div class="divinfo">
+                  <center><h3>Dirty Secrets: 9 Tips to Improve Garden Soil</h3></center>
+                </div>
+              </div>
+      </div>
+    </div>
+
+
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+                <div class= "divinfo">
+                  <center>1. Feed it an Organic Diets</center>
+
+                  <p>Spring brings a flurry of underground activity that we can't see. Billions of soil organisms stretch and yawn, exploding into existence. It's this living soil below ground that helps gardens thrive above ground by recycling nutrients, capturing water, improving soil tilth, and fighting pests and disease.
+
+              We build soil health all year-round by feeding and caring for it. How? Living soil has the same four basic requirements we do: food, water, shelter, and air.
+              
+              Autumn is the best season to start. Organic materials, the key ingredients for healthy soils, abound. You can add fallen leaves, garden debris, kitchen scraps, and even apples raked from beneath fruit trees to soil.
+              
+              Chop organic material directly into the top 2 inches of soil with a heavy bladed hoe and cover with mulch. Ideally, add concentrated manures, mineral phosphorous and potassium fertilizers, and lime at the same time. Adding these materials in the fall gives them time to break down for use when plants need them in the spring. </p>
+                </div>
+
+
+                <div><br><br>
+                  <img src="img25.png" style="width: 400px;">
+                </div>
+
+              </div>
+      </div>
+    </div>
+
+
+
+<br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+                <div><br>
+                  <img src="img26.png" style="width: 400px;">
+                </div>
+
+                <div class="divinfo">
+                  <center>2. Till With Worms</center>
+                  <p>Instead of breaking out the rototiller, or breaking my back double digging, I like to let the worms do my tilling for me by using sheet mulching techniques.
+
+              Sheet mulching is the process of building compost right on the soil surface. For new gardens, I'll add a smothering bottom layer of cardboard to kill existing vegetation, then alternate 2- to 4-inch-inch thick green and brown compost layers. This invites worms to burrow through the soil as they transport food. In the process, they dramatically improve soil structure, while depositing power-packed worm manure castings.
+              
+              Sheet mulching takes advance planning. Ideally, start sheet mulches for new gardens the year before you plan to plant (and for existing gardens a few months before planting). Sheet mulching will build new garden soil literally from the ground up. It maximizes nutrients, smothers weeds, and keeps soil life intact and undisturbed. </p>
+                </div>
+              </div>
+      </div>
+    </div>
+
+
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+                <div class= "divinfo">
+                  <center>3. Grow Your Own Soil</center>
+
+                  <p>Green manures and cover crops such as buckwheat and phacelia in the summertime and vetch, daikon, and clovers in the fall are my favorite way to improve soils. Whenever I have a window before planting, I grow a cover crop to add organic matter, lighten and loosen soil structure, and enrich garden nutrients. Cover crops also act as a living mulch to shelter soils and control weeds in the off-season.
+
+              Chop over-wintered cover crops directly into spring soils a few weeks before planting. During the growing season, sow a quick-growing cover crop, such as buckwheat, to fill the gap between spring and fall crops. When it's time to plant, pull the buckwheat cover and use it as a mulch for fall garden beds.</p>
+                </div>
+
+
+                <div>
+                  <img src="img27.png" style="width: 400px;">
+                </div>
+
+              </div>
+      </div>
+    </div>
+
+
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+          <div>
+            <img src="img28.png" style="width: 400px;">
+          </div>
+
+                <div class= "divinfo">
+                  <br>
+                  <center>4. Test for Success</center>
+
+                  <p>Soil tests are an indispensable garden tool. I always recommend taking one when starting a new garden, or when garden health declines. If an essential nutrient is missing, garden and soil health will suffer. For best results, take nutrient tests in the late summer or early fall. Submit a soil test to a certified lab to add the right balance fertilizers and lime materials to new gardens. For a list of certified labs visit NAPT.</p>
+                </div>
+
+
+                
+
+              </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+                <div class= "divinfo">
+                  <center>5. Supply What's Missing</center>
+
+                  <p>Over several seasons of soil building, a living, organic soil recycles and retains most nutrients, reducing or eliminating added fertilizer needs. When planting a new garden, however, organic fertilizers and lime ensure proper nutrition for the season ahead. If you've missed the fall window to add lime and mineral fertilizers, add them several weeks before planting in spring.
+
+              Use soil tests results and other resources to determine your garden's fertilizer needs. For general purposes, purchase a complete organic fertilizer mix from your garden center and use as recommended. Scratch fertilizers into the top 2 inches of vegetable gardens. For perennial gardens, don't dig at all. Spread fertilizers and lime, when needed, around the plants, water lightly, and cover with mulch.</p>
+                </div>
+
+
+                <div>
+                  <img src="img29.png" style="width: 400px;">
+                </div>
+
+              </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+          
+          <div><br><br>
+            <img src="img30.png" style="width: 400px;">
+          </div>
+             
+          <div class= "divinfo">
+                  <center>6. Don't Forget Nitrogen</center>
+
+                  <p>Of all the essential plant nutrients, nitrogen deserves special mention. Though a living soil will continue to recycle and retain most other mineral nutrients, nitrogen is often in short supply, even after years of soil building. Not only does nitrogen feed soil plants, it also feeds soil organisms. Because of this, garden growth and long-term soil health depend on nitrogen.
+
+              Before planting every year, ensure sufficient nitrogen by counting all the sources you've added. Organic fertilizers, such as blood, seed, or feather meal, are sources of concentrated nitrogen. Fall or spring legume cover crops transfer nitrogen from the atmosphere to the soil.  Manures or green grass clippings, incorporated as amendments, provide nitrogen as well. Compost, on the other hand, does not supply enough garden nitrogen. While compost is great for improving overall soil health, additional nitrogen sources are needed when using compost as an amendment.</p>
+                </div>
+
+
+                
+
+              </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+                <div class= "divinfo">
+                  <center>7. Pull, Cover, Smother</center>
+
+                  <p>As our garden wakes up in spring, so do the weeds. Before planting, get them under control. Weeds compete with garden plants, and from a soil perspective, they steal organic food away from the living soil.
+
+              For starters, fall mulching gives you the upper hand on spring weeds. Pull weeds that do emerge in the spring early and quickly, when they are small and easy to manage. If not noxious-that is, not spreading vigorously by root or stem , so I suggest laying them right back on the soil surface and covering them with from 2 to 4 inches of organic mulch. Covering garden beds right from the start gives you the jump on garden weeds, while feeding the soil with organic material at the same time.</p>
+                </div>
+
+
+                <div>
+                  <img src="img31.png" style="width: 400px;">
+                </div>
+
+              </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+          <div>
+            <img src="img32.png" style="width: 400px;">
+          </div>
+                <div class= "divinfo">
+                  <center>8. Recycle Perennials</center>
+
+                  <p>If you have a landscape garden, hedges, woodlands, or fruit trees, then you have a wealth of materials to amend soils. Winter and early spring tree prunings, hedge trimmings, and perennial cuttings can feed the soil when recycled back into the garden.
+
+              Chipped yard debris and bits pruned from trees make effective mulch. When green, they also provide a valuable nitrogen source as a sheet mulch layer. Use softer perennial cuttings as mulch, sheet mulch compost, or a garden bed amendment. I like a natural look in my landscape gardens. I'll actually chop cuttings into smaller pieces and mulch them right below the perennials I've cut. This type of composting in place mimics the way plant litter falls in nature.</p>
+                </div>
+
+              </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="column">
+      <div class="card">
+              <div class="container">
+
+                <div class= "divinfo">
+                  <center>9. Let Soils Dry</center>
+
+                  <p>For soils, it's often what we don't do, as much as what we do, that matters. Before planting spring gardens, the most important soil care priority is letting wet spring soils dry. Digging, walking on, or driving a rototiller over wet soils, particularly those with clays, compacts and damages the soil structure we work so hard to build. When this happens, we literally squeeze the air out of soils, leaving little space for organisms to breathe or roots to grow.
+
+              To tell when your soils are ready to work in the spring, take a handful and squeeze. If water comes out, hold off for a week or so. Soils that form a sturdy ball when molded or clay soils that press into a shiny ribbon also need to dry more.</p>
+                </div>
+
+
+                <div>
+                  <img src="img33.png" style="width: 400px;">
+                </div>
+
+              </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- ----------------------------- -->
+
+<style>
+
+.columnf
+{
+
+  margin:0 15px 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 15px;
+  flex-basis: 33%;
+}
+
+.cardf
+{
+  padding: 15px 25px;
+  background-color:#6B8E23;
+  border-radius: 18px;
+
+
+
+}
+.containerf
+{
+  /*max-width: 1170;*/
+  width: 100%;
+  margin:0 auto;
+  display:flex;
+}
+
+
+.loginf
+{
+   font-size: 20px;
+   background-color:#6B8E23;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   text-align: center;
+
+}
+
+.loginf a
+{
+  text-decoration: none;
+  color:white;
+  padding: 11px 60px;
+  border:1px solid white;
+
+}
+
+.loginf a:hover
+{
+
+  background-color:#6B8E23;
+  color:white;
+  transition: all 0.01s ease;
+  border:3px solid white;
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+figure {
+  width: 589px;
+  height: 150px;
+  background-color:#6B8E23;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+}
+figure h2 {
+  transition: 0.2s;
+  transform: translateY(20px);
+}
+figure p {
+  transition: 0.2s;
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+}
+figure:before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  transition: 0.6s;
+  transform: scaleX(0);
+}
+
+
+figure:after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  transition: 0.6s;
+  transform: scaleY(0);
+}
+
+figure:hover:before, 
+figure:hover:after{
+  transform: scale(1);
+}
+
+figure:hover h2, 
+figure:hover p {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.cardf i
+{
+   font-size: 27px;
+}
+
+
+</style>
+
+<!-- div pading -->
+
+
+     <div class="container">
+
+
+           <div class="columnf">
+              <div class="cardf">
+                <figure>
+                   <figcaption>
+                     <h2>Wnat to try more Gardening Concepts?</h2>
+                      <i class="ion-arrow-down-b"></i> 
+                  </figcaption>
+                </figure><div class="loginf"> <a href="../../../index.php"> <i class="ion-reply-all"></i> More Concepts</a></div>
+             </div>
+           </div>
+
+
+
+
+          <div class="columnf">
+              <div class="cardf">
+              <figure>
+                <figcaption>
+                  <h2>Want to try yourself on this topic?</h2>
+                   <i class="ion-arrow-down-b"></i>
+               </figcaption>
+               </figure>
+                <div class="loginf"> <a href="../../../index.php"> <i class="ion-reply-all"></i> More Concepts</a></div>
+              </div>
+          </div>
+
+</div>
+
+
+
+</body>
+</html>
