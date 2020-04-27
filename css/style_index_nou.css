@@ -1,0 +1,125 @@
+
+#banner {
+    width: 100%;
+    line-height: 80px;
+    border-bottom: 0.5px solid #313639;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+
+#main>article {
+    background: #f4f5f5;
+    border-right: 0.5px solid #313639;
+    color: black;
+    -webkit-flex: 4 1 0;
+    flex: 4 1 0;
+    -webkit-order: 1;
+    order: 1;
+    padding: 1em;
+
+}
+
+footer {
+    background: #313639;
+}
+
+[class^="pie"] {
+    stroke-width: 60;
+    fill: none;
+    transition: all ease 450ms;
+}
+
+[class^="pie"]:hover {
+    stroke-width: 70;
+    border-radius: 4px;
+}
+
+[class^="line-"] {
+    stroke-width: 2;
+    stroke: #0a0a0a;
+}
+
+.pie-1 {
+    stroke-dashoffset: 498;
+    stroke: #e44345;
+    stroke-dasharray: 208 630;
+    transition-delay: 25ms;
+}
+
+.pie-2 {
+    stroke-dasharray: 100 630;
+    stroke-dashoffset: 490;
+    stroke: #f7941e;
+    transition-delay: 50ms;
+}
+
+.pie-3 {
+    stroke-dasharray: 85 630;
+    stroke-dashoffset: 560;
+    stroke: #ffde16;
+    transition-delay: 75ms;
+}
+
+.pie-4 {
+    stroke-dasharray: 85 630;
+    stroke-dashoffset: -69;
+    stroke: #0ba14b;
+    transition-delay: 100ms;
+}
+
+.pie-5 {
+    stroke-dasharray: 80 630;
+    stroke-dashoffset: 10;
+    stroke: #13a89e;
+    transition-delay: 125ms;
+}
+
+.pie-6 {
+    stroke-dasharray: 40 630;
+    stroke-dashoffset: 81;
+    stroke: #1563a1;
+    transition-delay: 150ms;
+}
+
+.pie-7 {
+    stroke-dasharray: 36 630;
+    stroke-dashoffset: 111;
+    stroke: #7f3f98;
+    transition-delay: 200ms;
+}
+
+.pie-8 {
+    stroke-dasharray: 8 630;
+    stroke-dashoffset: 90;
+    stroke: #d399c5;
+    transition-delay: 250ms;
+}
+@media all and (max-width: 640px) {
+    html,
+    #main {
+        display: flex;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+    .logo {
+        font-weight: bold;
+    }
+    .actions {
+        display: none;
+    }
+    #main>article {
+        -webkit-order: 0;
+        order: 0;
+    }
+
+}
+
+body
+{
+    background-image:  url('../img/flow5.jpg'); 
+         background-size:cover ;
+    
+}
+ 
