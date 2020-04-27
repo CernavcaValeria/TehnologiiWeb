@@ -1,0 +1,58 @@
+	
+	body
+{
+	background-color: #00004d;
+	 /*url('../img/login3.jpg') ;*/
+    background-size:cover ;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+.container
+{
+	width: 580px;
+	height: 620px;
+	background-color:none;
+	margin:20px auto 0 auto;
+	text-align: center;
+	background-color: #ccccff;
+    border:2px solid black;
+    border-radius: 1%;
+}
+ .dws-submit
+{
+padding: 14px 125px;
+margin: 5px 0 20px 0;
+font-size: 18px;
+color:#fff;
+background-color: #4d4dff;
+border:none;
+border-bottom:4px solid #3333ff;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+input[type="text"],input[type="password"]
+{
+	width: 370px;
+	height: 50px;
+	font-size:18px;
+	margin-bottom:11px;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+a.dws-submit
+{
+padding: 13px 135px;
+font-size: 18px;
+text-decoration: none;
+font-family: sans-serif;
+}
+.divv
+{
+	padding-bottom: 2%;
+}
