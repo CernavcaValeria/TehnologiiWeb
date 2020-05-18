@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/register.css">
+	 	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
+</head>
+<body>
+
+<div class="container">
+	<div id='for-message'></div>
+	<form  name='ourForm'>
+			<br>	
+		<div class="dws-input">
+			<input type="text" name='username' placeholder="Login">
+		</div>
+
+		<div class="dws-input">
+			<input type="password" name='password' placeholder="Password">
+		</div>
+
+		<div class="dws-input">
+			<input type="text"  name='name' placeholder="Name" class="input">
+		</div>
+
+		<div class="dws-input">
+			<input type="text"  name='email' placeholder="Email" class="input">
+		</div>
+		<div class="dws-input">
+			<input type="text"  name='hobbies' placeholder="Hobies" class="input">
+		</div>
+
+		<div class="dws-input">
+			<input type="text"  name='quest' placeholder="Control Question" class="input">
+		</div>
+
+		<div class="dws-input">
+			<input type="text"  name='answer' placeholder="Answer" class="input">
+		</div>
+
+		<button class="dws-submit" type="submit" > <i class="ion-person-add"></i> Sign Up</button>
+		<hr><br>
+
+		<a href="login.html" class="dws-submit"><i class="ion-ios-person"></i> Login</a><br>
+	</form>
+</div>
+
+<script>
+
+var serverResponse = document.querySelector('#for-message');
+
+document.forms.ourForm.onsubmit = function(e){
+    e.preventDefault();   
+    
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'register.php');
+
+    var formData =  new FormData(document.forms.ourForm);
+
+    //xhr.setRequestHeader('Content-Type','application/x-www-from-urlencoded');
+
+    xhr.onreadystatechange = function()
+    {
+        if(xhr.readyState===4 && xhr.status===200)
+        {
+            serverResponse.textContent = xhr.responseText;
+            serverResponse.textContent.replace("\n", "");
+            serverResponse.textContent.trim();
+            console.log(serverResponse.textContent);
+
+            if(serverResponse.textContent==="")
+            {
+              location.href='login.html';                
+            }
+        }
+    }
+    xhr.send(formData);
+};
+</script>
+
+</body>
+</html>

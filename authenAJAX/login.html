@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
+</head>
+<body>
+<div class="container">   
+
+    <div id='for-message'></div>
+
+    <form  name='ourForm'>
+
+        <div class="dws-input">
+            <input type="text"  name='myLogin' autocomplete="on" placeholder="Login">
+        </div> 
+
+        <div class="dws-input">
+            <input type="password"  name='myPassword' autocomplete="on" placeholder="Password">
+        </div>     
+
+        <button class="dws-submit" type="submit" ><i class="ion-ios-person " id="submit"></i> Login</button>
+        <br><hr><br><br><br>
+        <a id="id1" href="email.html" class="dws-submit"><i class="ion-locked"></i> Forgot Password</a><br><br><br>
+
+        <a id="id2" href="register.html" class="dws-submit"><i class="ion-person-add"></i> Register</a><br><br><br>
+
+        <a id="id3" href="../index.php" class="dws-submit"><i class="ion-ios-glasses-outline"></i> Guest</a><br><br><br>        
+
+    </form>
+
+</div>
+
+
+<script>
+var serverResponse = document.querySelector('#for-message');
+
+document.forms.ourForm.onsubmit = function(e){
+    e.preventDefault();
+    
+    var userLogin = document.forms.ourForm.myLogin.value;
+    userLogin = encodeURIComponent(userLogin);
+    console.log(userLogin);
+
+    var userPass = document.forms.ourForm.myPassword.value;
+    userPass = encodeURIComponent(userPass);
+    console.log(userPass);
+    
+    
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'login.php');
+
+    var formData =  new FormData(document.forms.ourForm);
+
+    //xhr.setRequestHeader('Content-Type','application/x-www-from-urlencoded');
+
+    xhr.onreadystatechange = function()
+    {
+        if(xhr.readyState===4 && xhr.status===200)
+        {
+            serverResponse.textContent = xhr.responseText;
+            serverResponse.textContent.replace("\n", "");
+            serverResponse.textContent.trim();
+            console.log(serverResponse.textContent);
+
+            if(serverResponse.textContent==="")
+            {
+              location.href='../index.php';                
+            }
+        }
+    }
+
+    xhr.send(formData);
+};
+</script>    
+</body>
+</html>
