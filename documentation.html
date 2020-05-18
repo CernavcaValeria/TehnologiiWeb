@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+         <title>Documentation</title>
+    </head>
+<body>
+        <header>
+          <center><h1>  'GarT:Gardening Web Tutor' Project Documentation</h1></center>
+
+          <div role="contentinfo">
+            <section typeof="sa:AuthorsList">
+                <h2>Authors</h2>
+                <ul>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Sandra">
+                            <meta property="schema:familyName" content="Rusu">
+                            <span property="schema:name">Sandra Rusu</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="sandra.rusu17@gmail.com" property="schema:email">sandra.rusu17@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Valeria">
+                            <meta property="schema:familyName" content="Cernavca">
+                            <span property="schema:name">Valeria Cernavca</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="cernavcavaleria@gmail.com" property="schema:email">cernavcavaleria@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+                    <h2>Abstract</h2>
+                    <p>
+                        This documentation contains the implemented technical requirements, what technologies were used and what each team member achieved.
+                    </p>
+                </section>
+                <section>
+                    <h2>1.Purpose</h2>
+                    <p>
+                        We aim to develop a Web application that provides support for interactive learning of concepts and activities specific to gardening. For each specific concept / tool, we will provide the user with information such as meaning, type, practical advice, context of use, plus suggestions on when to perform activities, such as, sowing, irrigation, etc. The system will monitor the progress made by each user in the learning process, providing the user with several structure tests on 3 levels: easy, medium and heavy. Each user must first pass the entire level easily, to have access to the intermediate level, and respectively at the difficult level. Each test will be based on the information present on the web page. Only the one who has mastered all the information well can successfully pass all the levels. It will also generate a ranking of the top 10 most diligent users, also available as an RSS feed, which will be based on the number of points accumulated after taking the tests.
+                    </p>
+                </section>
+                
+
+                <section>
+                    <h3>Registered User</h3>
+                    <ul>
+                        <li>
+                            Log in to the application using a username and password.After logging in, he has the following rights:
+
+                            <ul>
+                                <li>
+                                    can access all the information present on the web site divided into categories:Teaching gardening,Ground Soils,Gardening Tools, Landscaping and Plant's Calendar
+
+                                </li>
+                                <li>
+                                    has access to the tests present after studying each subcategory, which are structured on 3 levels: easy, medium and hard
+                                </li>
+                                <li>
+                                    can see the ranking of the most diligent users in an RSS feed: TOP 10
+                                </li>
+                                <li>
+                                    can see the results of all the tests passed, and the My Progress section
+                                </li>
+                                <li>
+                                    can contact the website administrators via email
+                                </li>
+                                <li>
+                                    has access to all social links on other platforms
+                                </li>
+
+                                
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Users without an account</h3>
+                    <ul>
+                        <li>
+                            By entering the website, he has the following rights:
+                            <ul>
+                                <li>
+                                   he can sign up by : choosing a pseudonym, entering his first and last name, entering his valid e-mail and choosing a control question with an answer
+
+                                </li>
+                                <li>
+                                    can access all the information present on the web site divided into categories:Teaching gardening,Ground Soils,Gardening Tools, Landscaping and Plant's Calendar
+
+                                </li>
+                                <li>
+                                    can see the ranking of the most diligent users in an RSS feed: TOP 10
+                                </li>
+                                <li>
+                                    has access to all social links on other platforms
+                                </li>
+
+                                
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h3>Admin user</h3>
+                    <ul>
+                        <li>
+                            By passing all the tests on the web site, this kind of users (admin users) have additional rights:
+                            <ul>
+                                <li>
+                                has an additional right: can access the management section where he can delete, insert and update data on the web-site
+                                </li>
+                                <li>
+                                    can access all the information present on the web site divided into categories:Teaching gardening,Ground Soils,Gardening Tools, Landscaping and Plant's Calendar
+
+                                </li>
+                                <li>
+                                    has access to the tests present after studying each subcategory, which are structured on 3 levels: easy, medium and hard
+
+                                </li>
+                                <li>
+                                    can see the ranking of the most diligent users in an RSS feed: TOP 10
+                                </li>
+                                <li>
+                                    has access to all social links on other platforms
+                                </li>
+                                <li>
+                                    can be contacted by all web-site's users via email
+                                </li>
+                                
+                                
+
+                                
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                </section>
+
+<section>
+    <h3><b>2.Application development steps</b></h3>
+    1.	Sketches / Design / Architecture ()<br>
+    2.	Database modeling ()<br>
+    3.	Create frontend pages ()<br>
+    4.	Design backend ()<br>
+    5.	Create tables in database Mysql ()<br>
+    6.  Design & implementation ()<br>
+    7.	Implementation php ()<br>
+    8.	Add ajax functionality ()<br>
+    9.	Testing<br>
+
+</section>
+
+
+<section id="techs">
+    <h3>3.Used technologies</h3>
+    <ul>
+        <li>HTML5 - is a language for structuring and presenting content for the World Wide Web, a core Internet technology originally proposed for Opera software.</li>
+        <li>CSS - (Cascading Style Sheets) is a standard for formatting elements of an HTML document. Styles can be attached to HTML elements through external files or within the document, through the "style" element and / or the style attribute. CSS can also be used to format XHTML, XML and SVGL elements</li>
+        <li>PHP - Hypertext Preprocessor. Originally used to produce dynamic web pages, it is widely used in the development of web pages and applications. It is mainly used embedded in HTML code, but from version 4.3.0 it can also be used in "command line" mode (CLI), allowing the creation of standalone applications. It is one of the most important open-source and server-side web programming languages, with versions available for most web servers and all operating systems. According to statistics, it is installed on 20 million websites and 1 million web servers. It is available under the PHP License and the Free Software Foundation considers it to be free software.</li>
+        <li>HTML5 - is a language for structuring and presenting content for the World Wide Web, a core Internet technology originally proposed for Opera software.</li>
+
+    </ul>
+</section>
+
+<section id="db">
+    <h3>4.MySQL DataBase</h3>
+    <ul>
+        <li>
+            DataBase : register-bd
+            <ul>
+                <li>
+                    result(userId,concept,departament,level,finalScore)
+                </li>
+                <li>
+                    users(id,login,password,name,email, controlQuest, answer, hobbie )
+
+                </li>
+                <li>
+                    question(concept,departament,question, var1, var2, var3, corect, order, level)
+                </li>
+                
+            </ul>
+        </li>
+    
+    </ul>
+</section>
+
+
+
+<section id="git">
+    <h3>5. Source code management </h3>
+    <dl>
+        <dt id="ref-proiecte">GitHub -  a web hosting service for software development projects that uses the Git version control system.</dt>
+        <dd property="schema:citation" typeof="schema:ScholarlyArticle">
+            <cite propery="schema:name"><a href="https://github.com/Valeria1999/TehnologiiWeb">Our GitHub</a></cite>
+        </dd>
+    </dl>
+</section>
+<section id="progres">
+    <h3>6. Implicare</h3>
+    <p>
+        <li> Front-End: Cernavca Valeria , Rusu Sandra</li>
+        <li>Login: Cernavca Valeria</li>
+        <li>Register: Rusu Sandra</li>
+        <li>RSS-Feed: Rusu Sandra</li>
+        <li>Management: Cernavca Valeria</li>
+        <li>Progress: Cernavca Valeria , Rusu Sandra</li>
+
+    </p>
+</section>
+
+
+<section id="UML-Diagram">
+    <h3>7.Code Architecture</h3>
+    <dl>
+        <figure  typeof="sa:image">
+            <img src="CodeArchitecture.png" alt="Trulli" width="2900" height="900">
+        </figure>
+    </dl>
+</section>
+
+<section id="UML-Diagram">
+    <h3>8.WebSite Architecture</h3>
+    <dl>
+        <figure  typeof="sa:image">
+            <img src="WebArchitecture.png" alt="Trulli" width="2400" height="900">
+        </figure>
+    </dl>
+</section>
+
+
+
+
+
+               
+</body>
+</html>
