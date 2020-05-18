@@ -12,7 +12,6 @@ session_start();
 <?php
  $_SESSION['score']=0;
 ?>
-
     <div class="container">
         <header>
             <div class="pull-left">Test your knowledge</div>
@@ -25,7 +24,7 @@ mysql_connect('localhost','root','');
 mysql_select_db('register-bd');
 $concept = "Tools";
 $departament = "ElectricTools";
-$level = "easy";
+$level = "medium";
 $order = '1' ;
 
     $q = mysql_query("SELECT question as quest, var1 as v1, var2 as v2, var3 as v3 , corect as cor FROM question where concept='$concept' and departament='$departament' and level='$level' and `order`='$order' " );
@@ -46,9 +45,10 @@ $order = '1' ;
                     <li><input type="radio" name="answer1" value="3"> <?php echo $var3; ?></li>
                 </ul>
                 <center><button class= "dws-submit" type="submit">Submit</button></center>
+
         </main>
         <footer>
-            <div class="pull-left">Total: 5 Questions [easy]</div>
+            <div class="pull-left">Total: 5 Questions [medium]</div>
         </footer><br><br>
         <center><a href="../../../ElectricTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></center>
     </div> <!-- div container-->

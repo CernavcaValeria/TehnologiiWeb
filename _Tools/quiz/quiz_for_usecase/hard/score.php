@@ -13,14 +13,14 @@ session_start();
 <div class="container">
         <header>
             <div class="pull-left">The correct answer was: <?php echo $_SESSION['corect'];?></div>
-            <div class="pull-right">Theme: Tools->Primitive Tools</div>
+            <div class="pull-right">Theme: Tools->Use Case</div>
         </header>
         <main>
 <?php
 
 $answer5 = $_POST['answer5'];
 
- if($answer5 == $_SESSION['corect'])
+ if($answer5 == $_SESSION['corect'] )
 {
   $scor = $_SESSION['score'];
   $scor = $scor + 1;
@@ -37,8 +37,8 @@ $answer5 = $_POST['answer5'];
  {
   $user = $_SESSION['user_id'];
   $concept = "Tools";
-  $departament = "PrimitiveTools";
-  $level='easy';
+  $departament = "UseCase";
+  $level='hard';
 
   $conn = new mysqli('localhost','root','','register-bd');
     if ($conn->connect_error) {
@@ -51,7 +51,7 @@ $answer5 = $_POST['answer5'];
     {
         $mysql= new mysqli('localhost','root','','register-bd');
         $mysql->query( "INSERT INTO `result`(`userId`,`concept`, `departament`,`level`,`finalScore`) 
-        VALUES( '$user' ,'$concept','$departament','easy','$scorFinal')" );
+        VALUES( '$user' ,'$concept','$departament','hard','$scorFinal')" );
         $mysql->close();
 
     echo "<br><hr><br><center><h1>Dear " . $_SESSION['name'] ." Your final score is : ".$scorFinal ." out of 5</h1></center><br><hr><br>";
@@ -65,9 +65,9 @@ $answer5 = $_POST['answer5'];
 ?> 
         </main><br>
         <footer>
-            <div class="pull-left">Total: 5 Questions [easy]</div>
+            <div class="pull-left">Total: 5 Questions [hard]</div>
         </footer><br><br>
-        <div class="centerDiv"><a href="../../../PrimitiveTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></div>
+        <div class="centerDiv"><a href="../../../Use-Case.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></div>
     </div> <!-- div container-->
 <?php
  $_SESSION['score']=0;

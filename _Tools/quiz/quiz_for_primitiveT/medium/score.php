@@ -3,6 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>COUNT SCORE</title>
       <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
@@ -38,7 +39,7 @@ $answer5 = $_POST['answer5'];
   $user = $_SESSION['user_id'];
   $concept = "Tools";
   $departament = "PrimitiveTools";
-  $level='easy';
+  $level='medium';
 
   $conn = new mysqli('localhost','root','','register-bd');
     if ($conn->connect_error) {
@@ -51,7 +52,7 @@ $answer5 = $_POST['answer5'];
     {
         $mysql= new mysqli('localhost','root','','register-bd');
         $mysql->query( "INSERT INTO `result`(`userId`,`concept`, `departament`,`level`,`finalScore`) 
-        VALUES( '$user' ,'$concept','$departament','easy','$scorFinal')" );
+        VALUES( '$user' ,'$concept','$departament','medium','$scorFinal')" );
         $mysql->close();
 
     echo "<br><hr><br><center><h1>Dear " . $_SESSION['name'] ." Your final score is : ".$scorFinal ." out of 5</h1></center><br><hr><br>";
@@ -65,7 +66,7 @@ $answer5 = $_POST['answer5'];
 ?> 
         </main><br>
         <footer>
-            <div class="pull-left">Total: 5 Questions [easy]</div>
+            <div class="pull-left">Total: 5 Questions [medium]</div>
         </footer><br><br>
         <div class="centerDiv"><a href="../../../PrimitiveTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></div>
     </div> <!-- div container-->

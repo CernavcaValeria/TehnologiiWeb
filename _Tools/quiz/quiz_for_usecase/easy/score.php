@@ -2,96 +2,25 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>COUNT SCORE</title>
+  <title>COUNT SCORE</title>
       <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="../../../../css/quiz.css">
 </head>
-<style >
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.6em;
-    background: #F0F8FF;
-}
-li{
-    list-style:none;
-}
-.container
-{
-    width: 70%;
-    margin:20px auto;
-    overflow:auto;
-    height: 600px;
-}
-.pull-left{float:left;}
-.pull-right{float:right;}
-header{
-    background: #4193DA ;
-    color:black;
-    padding: 20px 80px;
-    overflow:auto;
-    font-size: 20px;
-    border-radius: 20px;
-
-}
-footer{
-
-    background: #4193DA ;
-    color:black;
-    padding: 20px 80px;
-    overflow:auto;
-    font-size: 20px;
-    border-radius: 20px;
-
-}
-@media only screen and (max-width: 900px)
-{
-    .container{
-    width: 90%;
-    }
-}
-
-.dws-submit
-{
-padding: 13px 130px;
-margin: 5px 0 20px 0;
-font-size: 19px;
-color:#fff;
-background-color: #0000FF;
-border:none;
-border-bottom:4px solid #00008B;
-cursor: pointer;
-border-radius: 20px;
-
-}
-.adws-submit
-{
-padding: 13px 135px;
-margin: 5px 0 20px 0;
-font-size: 19px;
-color:#fff;
-background-color: #0000FF;
-border:none;
-border-bottom:4px solid #00008B;
-cursor: pointer;
-border-radius: 20px;
-text-decoration:none;
-
-}
-</style>
 <body>
+
 <div class="container">
         <header>
-            <div class="pull-left">Test your knowledge</div>
-            <div class="pull-right">Theme: Grount Soils->Use-Case</div>
+            <div class="pull-left">The correct answer was: <?php echo $_SESSION['corect'];?></div>
+            <div class="pull-right">Theme: Tools->Use Case</div>
         </header>
         <main>
 <?php
 
 $answer5 = $_POST['answer5'];
 
- if($answer5 == 1)
+ if($answer5 == $_SESSION['corect'])
 {
   $scor = $_SESSION['score'];
   $scor = $scor + 1;
@@ -107,8 +36,8 @@ $answer5 = $_POST['answer5'];
  if($scorFinal<=5)
  {
   $user = $_SESSION['user_id'];
-  $departament = "TypeSoil";
-  $concept = "Usecase";
+  $concept = "Tools";
+  $departament = "UseCase";
   $level='easy';
 
   $conn = new mysqli('localhost','root','','register-bd');
@@ -127,6 +56,10 @@ $answer5 = $_POST['answer5'];
 
     echo "<br><hr><br><center><h1>Dear " . $_SESSION['name'] ." Your final score is : ".$scorFinal ." out of 5</h1></center><br><hr><br>";
    }
+   else
+   {
+    echo "<br><hr><br><center><h1>Dear " . $_SESSION['name'] ." you've successfully passed this test!</h1></center><br><hr><br>";
+   }
  }
  
 ?> 
@@ -134,7 +67,7 @@ $answer5 = $_POST['answer5'];
         <footer>
             <div class="pull-left">Total: 5 Questions [easy]</div>
         </footer><br><br>
-        <center><a href="../../../UseGrountSoils.php"class="adws-submit"><i class="ion-android-exit"></i> Quit</a></center>
+        <div class="centerDiv"><a href="../../../Use-Case.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></div>
     </div> <!-- div container-->
 <?php
  $_SESSION['score']=0;

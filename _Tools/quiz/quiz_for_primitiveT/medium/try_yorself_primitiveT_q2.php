@@ -3,6 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Questin2</title>
       <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
@@ -13,7 +14,7 @@ session_start();
 $_SESSION['score']=0;
 $answer1 = $_POST['answer1'];
 
-  if($answer1== $_SESSION['corect'])
+  if($answer1==$_SESSION['corect'])
 {
  $_SESSION['score']=1;
  $scor= $_SESSION['score'];
@@ -31,7 +32,7 @@ mysql_connect('localhost','root','');
 mysql_select_db('register-bd');
 $concept = "Tools";
 $departament = "PrimitiveTools";
-$level = "easy";
+$level = "medium";
 $order = '2' ;
 
     $q = mysql_query("SELECT question as quest, var1 as v1, var2 as v2, var3 as v3 , corect as cor FROM question where concept='$concept' and departament='$departament' and level='$level' and `order`='$order' " );
@@ -51,12 +52,13 @@ $order = '2' ;
                     <li><input type="radio" name="answer2" value="2"> <?php echo $var2; ?></li>
                     <li><input type="radio" name="answer2" value="3"> <?php echo $var3; ?></li>
                 </ul>
+
                 <div class="centerDiv"><button class= "dws-submit" type="submit">Submit</button></div>
     </form>
 
         </main>
         <footer>
-            <div class="pull-left">Total: 5 Questions [easy]</div>
+            <div class="pull-left">Total: 5 Questions [medium]</div>
             <div class="pull-right"><?php echo "Your current score is : " .$_SESSION['score'] ." points";?></div>
         </footer><br><br>
         <div class="centerDiv"><a href="../../../PrimitiveTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></div>

@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Questin1</title>
       <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
@@ -12,20 +12,19 @@ session_start();
 <?php
  $_SESSION['score']=0;
 ?>
-
     <div class="container">
         <header>
             <div class="pull-left">Test your knowledge</div>
-            <div class="pull-right">Theme: Tools->Electric Tools</div>
+            <div class="pull-right">Theme: Tools->Primitive Tools</div>
         </header>
         <main>
-            <form class="questionForm" action="try_yorself_electricT_q2.php" method="post" >
-<?php 
+            <form class="questionForm" action="try_yorself_primitiveT_q2.php" method="post" >
+ <?php 
 mysql_connect('localhost','root','');
 mysql_select_db('register-bd');
 $concept = "Tools";
-$departament = "ElectricTools";
-$level = "easy";
+$departament = "PrimitiveTools";
+$level = "hard";
 $order = '1' ;
 
     $q = mysql_query("SELECT question as quest, var1 as v1, var2 as v2, var3 as v3 , corect as cor FROM question where concept='$concept' and departament='$departament' and level='$level' and `order`='$order' " );
@@ -45,12 +44,14 @@ $order = '1' ;
                     <li><input type="radio" name="answer1" value="2"> <?php echo $var2; ?></li>
                     <li><input type="radio" name="answer1" value="3"> <?php echo $var3; ?></li>
                 </ul>
-                <center><button class= "dws-submit" type="submit">Submit</button></center>
+                <div class="centerDiv"><button class= "dws-submit" type="submit">Submit</button></div>
+    </form>
+
         </main>
         <footer>
-            <div class="pull-left">Total: 5 Questions [easy]</div>
+            <div class="pull-left">Total: 5 Questions [hard]</div>
         </footer><br><br>
-        <center><a href="../../../ElectricTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></center>
+        <div class="centerDiv"><a href="../../../PrimitiveTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></div>
     </div> <!-- div container-->
 
 </body>

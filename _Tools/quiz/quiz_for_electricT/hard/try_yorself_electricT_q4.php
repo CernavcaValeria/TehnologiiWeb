@@ -4,29 +4,39 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Questin1</title>
+  <title>Questin4</title>
       <link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
       <link rel="stylesheet" type="text/css" href="../../../../css/quiz.css">
 </head>
 <body>
-<?php
- $_SESSION['score']=0;
-?>
 
+
+<?php
+
+$answer3 = $_POST['answer3'];
+
+  if($answer3 == $_SESSION['corect'])
+{
+ $scor = $_SESSION['score'];
+ $scor = $scor + 1;
+ $_SESSION['score'] = $scor;
+}
+
+?>
     <div class="container">
         <header>
-            <div class="pull-left">Test your knowledge</div>
+            <div class="pull-left">The correct answer was: <? echo $_SESSION['corect']; ?></div>
             <div class="pull-right">Theme: Tools->Electric Tools</div>
         </header>
         <main>
-            <form class="questionForm" action="try_yorself_electricT_q2.php" method="post" >
+            <form class="questionForm" action="try_yorself_electricT_q5.php" method="post" >
 <?php 
 mysql_connect('localhost','root','');
 mysql_select_db('register-bd');
 $concept = "Tools";
 $departament = "ElectricTools";
-$level = "easy";
-$order = '1' ;
+$level = "hard";
+$order = '4' ;
 
     $q = mysql_query("SELECT question as quest, var1 as v1, var2 as v2, var3 as v3 , corect as cor FROM question where concept='$concept' and departament='$departament' and level='$level' and `order`='$order' " );
     
@@ -41,14 +51,16 @@ $order = '1' ;
 ?>                
                 <h3><?php echo $order .". ".$question; ?></h3>
                 <ul>
-                    <li><input type="radio" name="answer1" value="1"> <?php echo $var1; ?></li>
-                    <li><input type="radio" name="answer1" value="2"> <?php echo $var2; ?></li>
-                    <li><input type="radio" name="answer1" value="3"> <?php echo $var3; ?></li>
+                    <li><input type="radio" name="answer4" value="1"> <?php echo $var1; ?></li>
+                    <li><input type="radio" name="answer4" value="2"> <?php echo $var2; ?></li>
+                    <li><input type="radio" name="answer4" value="3"> <?php echo $var3; ?></li>
                 </ul>
                 <center><button class= "dws-submit" type="submit">Submit</button></center>
+
         </main>
         <footer>
-            <div class="pull-left">Total: 5 Questions [easy]</div>
+            <div class="pull-left">Total: 5 Questions [hard]</div>
+            <div class="pull-right"><?php echo "Your current score is : " .$_SESSION['score'] ." points";?></div>
         </footer><br><br>
         <center><a href="../../../ElectricTools.php" class="adws-submit"><i class="ion-android-exit"></i> Quit</a></center>
     </div> <!-- div container-->
