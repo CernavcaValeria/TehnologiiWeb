@@ -1,0 +1,106 @@
+a.dws-submit
+{
+font-size: 18px;
+text-decoration: none;
+font-family: sans-serif;
+}
+.questP
+{
+    margin-right:34.5%;
+    margin-left:34.5%;
+    text-align:center;
+}
+    p
+    {
+    padding: 13px 60px;
+    margin: 5px 0 20px 0;
+    font-size: 20px;
+    color:#fff;
+    background-color:#000066;
+    border:none;
+    border-bottom:4px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+    @media(max-width: 1300px){
+    .questP
+    {
+        margin-right:25.5%;
+        margin-left:25.5%;
+    }
+ }
+ @media(max-width: 900px){
+    .questP
+    {
+        margin-right:10.5%;
+        margin-left:10.5%;
+    }
+ }
+            #for-message
+    {
+        color :red;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 0.5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 600;
+        padding: 10px 25px;
+    }
+     body
+{
+    background-image: url(../../img/flow.jpg);
+    background-size: cover;   
+}
+a:hover
+{
+    text-decoration: none;
+}
+.container
+{
+    width: 450px;
+    background-color:none;
+    margin:100px auto 0 auto;
+    text-align: center;
+    background-color: #ccccff;
+    border:1px solid white;
+    border-radius: 1%;
+
+}
+.dws-submit
+{
+padding: 14.5px 90px;
+margin: 5px 0 20px 0;
+font-size: 18px;
+color:#fff;
+background-color: #061634;
+border:none;
+border-bottom:4px solid black;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+input[type="text"],input[type="password"]
+{
+    width: 350px;
+    height: 50px;
+    font-size:18px;
+    margin-bottom:25px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+#id2
+{
+    padding: 15.5px 125px;
+}
+#id2 i{
+ font-size: 22px;
+}
+
+i{
+ font-size: 24px;
+}

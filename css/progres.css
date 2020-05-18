@@ -1,0 +1,247 @@
+      .centerr
+    {
+      font-size:35px;
+      color:#2F4F4F;
+      font-weight: 600;
+      font-family:sans-serif;
+      text-align: center;
+    }  
+  div.container 
+  {
+    align-items: center;
+  }
+    p.nameUser
+  {
+    text-align: center;
+  }
+	body
+{
+ 	background-color: #ccccff;
+}
+.Congratulations
+{
+  padding-right: 3%;
+  padding-left: 3%;
+}
+.Congratulations p
+{
+    font-size: 30px;
+}
+@media(max-width: 1300px)
+{
+.Congratulations p
+   {
+    font-size: 29px;
+   }
+}
+@media(max-width: 1200px)
+{
+.Congratulations p
+   {
+    font-size: 27px;
+   }
+}
+@media(max-width: 1100px)
+{
+.Congratulations p
+   {
+    font-size: 25px;
+   }
+}
+@media(max-width: 1000px)
+{
+.Congratulations p
+   {
+    font-size: 22px;
+   }
+    p
+   {
+    font-size:10px;
+   }
+}
+@media(max-width: 900px)
+{
+.Congratulations p
+   {
+    font-size: 20px;
+   }
+ p
+   {
+    font-size:10px;
+   }
+
+}
+@media(max-width: 800px)
+{
+.Congratulations p
+   {
+    font-size: 18px;
+   }
+}
+.container
+{
+	width: 480px;
+	height: 350px;
+	background-color:none;
+	margin:50px auto 0 auto;
+	background-color: #F0FFFF;
+  border:1px solid black;
+  border-radius: 1%;
+}
+.container p
+{
+	font-size: 20px;
+	font-family: sans-serif;
+	padding-left: 5%;
+	padding-bottom: 3%;
+}
+.dws-submit
+{
+padding: 15px 128px;
+margin: 5px 0 20px 0;
+font-size: 18px;
+color:#fff;
+background-color: #4d4dff;
+border:none;
+border-bottom:4px solid #3333ff;
+cursor: pointer;
+border-radius: 4px;
+
+}
+.divforicon
+{
+	background-color: #ccccff;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+  margin-left: 43%;
+}
+.divforicon i
+{
+	font-size: 85px;
+  margin-left: 14.5%;
+}
+
+
+
+.columnT
+{
+  background-color:#F0FFFF;
+  margin:0 15px 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 15px;
+  flex-basis: 33%;
+}
+
+.cardT
+{
+  padding: 15px 25px;
+
+}
+
+.containerT
+{
+  max-width: 1170;
+  width: 100%;
+  margin:0 auto;
+  display:flex;
+}
+
+    .table-box
+    {
+      margin:50px auto;
+    }
+    .table-row
+    {
+      display: table;
+      width: 100%;
+      margin: 10px;
+      font-family: sans-serif;
+      background:transparent;
+      padding: 0px 0;
+      color:#2F4F4F;
+      font-size:13px;
+      border: 1px black solid;
+      box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+    }
+    .table-cell
+    {
+      display:table-cell;
+      width: 25%;
+      padding:20px 0;
+      text-align: center;
+      border-right: 1px solid gray;
+      vertical-align: middle;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .table-head
+    {
+      background: linear-gradient(90deg, rgb(206, 142, 156) 0%, rgb(170, 74, 95) 35%, rgb(114, 31, 49) 100%);
+      box-shadow: none;
+      color: #fff;
+      font-weight: 600;
+      background:cover;
+      font-size: 17px;
+    } 
+    .table-head1
+    {
+      background: linear-gradient(90deg, #C0C0C0 0%, gray 35%, black 90%);
+      box-shadow: none;
+      color: #fff;
+      font-weight: 600;
+      background:cover;
+      font-size: 17px;
+    } 
+    .table-head2
+    {
+      background: linear-gradient(90deg, yellow  0%,gold  35%,orange  100%);
+      box-shadow: none;
+      color: #fff;
+      font-weight: 600;
+      background:cover;
+      font-size: 17px;
+    } 
+    .table-head .table-cell
+    {
+        border-right: none;
+        color:#fff;
+    }
+    .last-cell
+    {
+      border-right: none;
+    }
+    .first-cell
+    {
+      text-align: left;
+      padding-left: 10px;
+      font-size: 15px;
+    }    
+    .centerr
+    {
+      font-size:35px;
+      color:#2F4F4F;
+      font-weight: 600;
+      font-family:sans-serif;
+      text-align: center;
+    }  
+.padding
+{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.gotopbtnhome{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+} 
+
+

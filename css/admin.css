@@ -1,0 +1,552 @@
+*{
+  margin:0;
+}
+    .centerr
+    {
+      font-size:35px;
+      color:#2F4F4F;
+      font-weight: 600;
+      font-family:sans-serif;
+      text-align: center;
+      margin-top: 0px;
+    }  
+  div.container 
+  {
+    align-items: center;
+  }
+    p.nameUser
+  {
+    text-align: center;
+  }
+  body
+{
+  background-color: #ccccff;
+}
+.Congratulations
+{
+  padding-right: 3%;
+  padding-left: 3%;
+}
+.Congratulations p
+{
+    font-size: 30px;
+}
+@media(max-width: 1300px)
+{
+.Congratulations p
+   {
+    font-size: 29px;
+   }
+}
+@media(max-width: 1200px)
+{
+.Congratulations p
+   {
+    font-size: 27px;
+   }
+}
+@media(max-width: 1100px)
+{
+.Congratulations p
+   {
+    font-size: 25px;
+   }
+}
+@media(max-width: 1000px)
+{
+.Congratulations p
+   {
+    font-size: 22px;
+   }
+    p
+   {
+    font-size:10px;
+   }
+}
+@media(max-width: 900px)
+{
+.Congratulations p
+   {
+    font-size: 20px;
+   }
+ p
+   {
+    font-size:10px;
+   }
+
+}
+@media(max-width: 800px)
+{
+.Congratulations p
+   {
+    font-size: 18px;
+   }
+}
+.container
+{
+  width: 480px;
+  height: 350px;
+  background-color:none;
+  margin:50px auto 0 auto;
+  background-color: #F0FFFF;
+  border:1px solid black;
+  border-radius: 1%;
+}
+.container p
+{
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-left: 5%;
+  padding-bottom: 3%;
+}
+.dws-submit
+{
+padding: 12px 50px;
+margin: 5px 0 20px 0;
+font-size: 16px;
+color:#fff;
+background-color: #061634;
+border:1px solid black;
+border-bottom:4px solid black;
+cursor: pointer;
+border-radius: 30px;
+float: right;
+
+}
+button.dws-submit :hover
+{
+  color: #061634;
+  background-color: azure;
+}
+.divforicon
+{
+  background-color: #ccccff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 43%;
+}
+.divforicon i
+{
+  font-size: 85px;
+  margin-left: 14.5%;
+}
+
+.columnT
+{
+  background-color:#F0FFFF;
+  margin:0 15px 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 15px;
+  flex-basis: 33%;
+}
+
+.cardT
+{
+  padding-left:0%;
+  padding-right: 20px;
+  padding-bottom: 1%;
+}
+
+.containerT
+{
+  max-width: 1170;
+  width: 100%;
+  margin:0 auto;
+  display:flex;
+}
+
+    .table-box
+    {
+      margin:50px auto;
+    }
+    .table-row
+    {
+      display: table;
+      width: 100%;
+      margin: 10px;
+      font-family: sans-serif;
+      background:transparent;
+      padding: 0px 0;
+      color:#2F4F4F;
+      font-size:13px;
+      border: 1px black solid;
+      box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+    }
+    .table-cell
+    {
+      display:table-cell;
+      width: 14.285714%;
+      /*14.285714%;*/
+      padding:20px 0;
+      text-align: center;
+      border-right: 1px solid gray;
+      vertical-align: middle;
+      font-size: 12px;
+      font-weight: 600;
+      margin:0;
+
+    }
+    .table-cellPut
+    {
+      display:table-cell;
+      width: 13.75%;
+      /*14.285714%;*/
+      padding:20px 0;
+      text-align: center;
+      border-right: 1px solid gray;
+      vertical-align: middle;
+      font-size: 12px;
+      font-weight: 600;
+    }
+      @media(max-width: 1320px)
+{
+    .table-cellPut
+    {
+      width: 13.77%;
+    }
+}
+      @media(max-width: 1220px)
+{
+    .table-cellPut
+    {
+      width: 13.65%;
+    }
+}
+      @media(max-width: 1130px)
+{
+    .table-cellPut
+    {
+      width: 13.6%;
+    }
+}
+      @media(max-width: 1090px)
+{
+    .table-cellPut
+    {
+      width: 13.55%;
+    }
+}
+      @media(max-width: 1030px)
+{
+    .table-cellPut
+    {
+      width: 13.5%;
+    }
+}
+      @media(max-width: 980px)
+{
+    .table-cellPut
+    {
+      width: 13.45%;
+    }
+}
+      @media(max-width: 930px)
+{
+    .table-cellPut
+    {
+      width: 13.4%;
+    }
+        .dws-submit
+    {
+      padding: 12px 40px;
+    }
+}
+      @media(max-width: 890px)
+{
+    .table-cellPut
+    {
+      width: 13.35%;
+    }
+}
+      @media(max-width: 850px)
+{
+    .table-cellPut
+    {
+      width: 13.3%;
+    }
+}
+      @media(max-width: 810px)
+{
+    .table-cellPut
+    {
+      width: 13.25%;
+    }
+}
+      @media(max-width: 770px)
+{
+    .table-cellPut
+    {
+      width: 13.2%;
+    }
+            .dws-submit
+    {
+      padding: 12px 25px;
+    }
+}
+      @media(max-width: 750px)
+{
+    .table-cellPut
+    {
+      width: 13.15%;
+    }
+}
+      @media(max-width: 720px)
+{
+    .table-cellPut
+    {
+      width: 13.1%;
+    }
+}
+      @media(max-width: 690px)
+{
+    .table-cellPut
+    {
+      width: 13.05%;
+    }
+    .dws-submit
+    {
+      padding: 12px 15px;
+    }
+ }   
+      @media(max-width: 660px)
+{
+    .table-cellPut
+    {
+      width: 13%;
+    }
+}
+      @media(max-width: 620px)
+{
+    .table-cellPut
+    {
+      width: 12.94%;
+    }
+}
+    .table-head
+    {
+      background: #061634;
+      box-shadow: none;
+      color: #fff;
+      font-weight: 600;
+      background:cover;
+      font-size: 12px;
+    } 
+    .table-head1
+    {
+      background: linear-gradient(90deg, #C0C0C0 0%, gray 35%, black 90%);
+      box-shadow: none;
+      color: #fff;
+      font-weight: 600;
+      background:cover;
+      font-size: 17px;
+    } 
+    .table-head2
+    {
+      background: linear-gradient(90deg, yellow  0%,gold  35%,orange  100%);
+      box-shadow: none;
+      color: #fff;
+      font-weight: 600;
+      background:cover;
+      font-size: 17px;
+    } 
+    .table-head .table-cell
+    {
+        border-right: none;
+        color:#fff;
+    }
+    .last-cell
+    {
+      border-right: none;
+    }
+    .first-cell
+    {
+      text-align: left;
+      padding-left: 10px;
+      font-size: 15px;
+    }    
+    .centerr
+    {
+      font-size:35px;
+      color:#2F4F4F;
+      font-weight: 600;
+      font-family:sans-serif;
+      text-align: center;
+      padding-top: 2%;
+    }  
+.padding
+{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.gotopbtnhome{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+} 
+    #for-message
+   {
+       color :red;
+       display: block;
+       font-size: 18px;
+       margin-bottom: 0.5%;
+       margin-left: 10%;
+       margin-right: 10%;
+       font-weight: 600;
+       padding: 10px 25px;
+   }
+
+ .myForm{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-weight:bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myForm ul{
+    height:35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.myForm li
+{
+    float:left;
+    padding:0px;
+    width:14.285714%;
+
+}
+
+.myForm li input
+ {
+    background:azure;
+    color:#ccc;
+    display:table-cell;
+    font-weight:normal;
+    line-height:60px;
+    margin:0px;
+    padding:0px 5%;
+    text-align:center;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+ .menu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-weight:bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul{
+    background:#061634;
+    height:35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+}
+
+.menu li
+{
+    float:left;
+    padding:0px;
+    width: 25%;
+
+}
+
+.menu li a
+ {
+    background:#061634;
+    color:#ccc;
+    display:block;
+    font-weight:normal;
+    line-height:60px;
+    margin:0px;
+    padding:0px 10%;
+    text-align:center;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+.menu li a:hover, .menu ul li:hover a
+{
+    background:#44a1ca;
+    color:#FFF;
+    text-decoration:none;
+    font-family: Arial;
+}
+.menu li ul
+{
+    background:#061634;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    width:25%;
+    z-index:200;
+    position: absolute;
+    font-family: Arial;
+}
+
+
+
+.menu li:hover ul
+{
+  display:block;
+  width:25%;
+
+}
+.menu li li
+{
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+  width:100%;
+}
+
+.menu li:hover li a
+{
+  background:none;
+}
+
+.menu li ul a
+{
+  display:block;
+  height:60px;
+  font-size:17px;
+  font-family: Arial;
+  margin:0px;
+  padding:0px 10px 0px 10px;
+  text-align:left;
+}
+
+.menu li ul a:hover, .menu li ul li:hover a
+{
+  background:#44a1ca center left no-repeat;
+  border:0px;
+  color:#fff;
+  text-decoration:none;
+  border:1px solid white;
+  transition: 0.5s;
+  margin:0;
+}

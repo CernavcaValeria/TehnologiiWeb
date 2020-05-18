@@ -1,0 +1,89 @@
+    #for-message
+    {
+        color :red;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 0.5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 600;
+        padding: 10px 25px;
+    }
+     body
+{
+    background-image: url(../../img/flow.jpg);
+    background-size: cover;   
+}
+a:hover
+{
+    text-decoration: none;
+}
+.container
+{
+    width: 450px;
+    background-color:none;
+    margin:100px auto 0 auto;
+    text-align: center;
+    background-color: #ccccff;
+    border:1px solid white;
+    border-radius: 1%;
+
+}
+.dws-submit
+{
+padding: 14.5px 128px;
+margin: 5px 0 20px 0;
+font-size: 18px;
+color:#fff;
+background-color: #061634;
+border:none;
+border-bottom:4px solid black;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+input[type="text"],input[type="password"]
+{
+    width: 350px;
+    height: 50px;
+    font-size:18px;
+    margin-bottom:25px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+a.dws-submit
+{
+font-size: 18px;
+text-decoration: none;
+font-family: sans-serif;
+}
+
+#id2
+{
+    padding: 14px 113.5px;
+}
+#id3
+{
+    padding: 14.5px 120px;
+}
+
+#id3 i{
+ font-size: 25px;
+}
+
+#id2 i{
+ font-size: 20px;
+}
+
+#id1 i{
+ font-size: 20px;
+}
+
+i{
+ font-size: 24px;
+}
+#id1
+{
+     padding: 15px 80.5px;
+}

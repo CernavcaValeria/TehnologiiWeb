@@ -1,0 +1,64 @@
+	 #for-message
+    {
+        color :red;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 0.5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 600;
+        padding: 10px 25px;
+    }
+
+ body
+{
+    background-image: url(../../img/flow.jpg);
+    background-size: cover;   
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+.container
+{
+	width: 580px;
+	height: 720px;
+	background-color:none;
+	margin:20px auto 0 auto;
+	text-align: center;
+	background-color: #ccccff;
+    border:1px solid white;
+    border-radius: 1%;
+}
+ .dws-submit
+{
+padding: 14px 125px;
+margin: 5px 0 20px 0;
+font-size: 18px;
+color:#fff;
+background-color: #061634;
+border:none;
+border-bottom:4px solid #black;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+input[type="text"],input[type="password"]
+{
+	width: 370px;
+	height: 50px;
+	font-size:18px;
+	margin-bottom:11px;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+a.dws-submit
+{
+padding: 15px 135px;
+font-size: 18px;
+text-decoration: none;
+font-family: sans-serif;
+}

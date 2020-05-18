@@ -1,0 +1,43 @@
+	     body
+{
+    background-image: url(../../img/flow.jpg);
+    background-size: cover;   
+}
+.adws-submit
+{
+padding: 13px 100px;
+margin: 5px 0 20px 0;
+font-size: 19px;
+color:#fff;
+background-color: #0000FF;
+border:none;
+border-bottom:4px solid #00008B;
+cursor: pointer;
+border-radius: 20px;
+text-decoration:none;
+font-weight: bold;
+border:solid 1px #fff;
+}
+.adws-submit1
+{
+padding: 13px 110px;
+margin: 5px 0 20px 0;
+font-size: 19px;
+color:#fff;
+background-color: #0000FF;
+border:none;
+border-bottom:4px solid #00008B;
+cursor: pointer;
+border-radius: 20px;
+text-decoration:none;
+font-weight: bold;
+border:solid 1px #fff;
+}
+.adws-submit:hover,.adws-submit1:hover
+{
+	background-color: white;
+	transition: 0.5s;
+	color: black;
+	border:solid 1px black;
+	font-weight: bold;
+}
